@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a tag exam</title>
+    <style>
+        /* 하이퍼링크의 밑줄을 제거한다. */
+        a {
+            text-decoration: none;
+        }
+
+        /* 사용자가 아직 한번도 페이지를 방문하지 않은 상태 */
+        a:link {}
+
+        /* 사용자가 한번이라도 링크를 방문한 상태 */
+        a:visited {}
+
+        /* 마우스가 올려져 있을때 */
+        a:hover {}
+
+        /* 마우스로 링크를 클릭하고 있을 때 */
+        a:active{}
+
+        /* a 태그를 버튼으로 */
+        a:link, a:visited {
+            background-color: aquamarine;
+            border-radius: 15px;
+            color: black;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a_to_btn:hover, a_to_btn:active {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <a class="a_to_btn" href="#">a태그 버튼처럼</a>
+</body>
+</html>
