@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamburger Menu Animation</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./HamburgerAnimation.css">
+</head>
+<body>
+    <div id="container">
+        <div id="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <button>Click me!</button>
+    </div>
+
+    <script>
+        const navMenu = document.querySelector("#navMenu");
+        const btn = document.querySelector("button");
+        btn.addEventListener("click",() => {
+            navMenu.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
