@@ -1,0 +1,23 @@
+.link{
+    transform: translateX(-0.75em);
+    transition: transform 0.2s;
+}
+
+.link::before{
+    content: '#';
+    display: inline-block;
+    width: 0.75em;
+
+    color: #888888;
+
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.link:hover{
+    transform: none;
+}
+
+.link:hover::before{
+    opacity: 1;
+}
