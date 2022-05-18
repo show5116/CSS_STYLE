@@ -1,0 +1,21 @@
+.container{
+    scroll-snap-type: x mandatory;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.container > .child{
+    display: inline-block;
+    min-width: 500px;
+    height: 500px;
+    scroll-snap-align: start;
+}
+
+.child:nth-child(odd){
+    background-color: #888888;
+}
+
+.child:nth-child(even){
+    background-color: #24c78e;
+}
